@@ -40,6 +40,22 @@ router.post('/', (req, res) => {
 
 })
 
+router.delete("/:id", (req, res) => {
+    const { id } = req.params;
+
+    const product = manager.getProductById(Number(id));
+
+    if (!product) {
+        return res.status(404).json({
+            error: "No se encontro el producto",
+        });
+    }
+    manager.deleteProduct(Number(id));
+
+    res.json(product);
+
+});
+
 router.put("/:id", (req, res) => {
     const { id } = req.params;
     const { title, description, price, thumbnail, code, stock, category, status } =
@@ -73,5 +89,8 @@ router.put("/:id", (req, res) => {
     });
 
 });
+
+
+
 
 export default router;
