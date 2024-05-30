@@ -17,13 +17,14 @@ import fs from "fs";
  class ProductManager {
     constructor(path) {
         this.path = path;
-
         // Validamos si existe el archivo
         if (fs.existsSync(this.path)) {
             try {
                 this.products = JSON.parse(fs.readFileSync(this.path, "utf-8"));
+                
             } catch (error) {
                 this.products = [];
+
             }
         } else {
             this.products = [];
@@ -82,6 +83,7 @@ import fs from "fs";
     }
 
     getProductById(idProduct) {
+        
         if (isNaN(Number(idProduct))) {
             console.log("El id debe ser un número");
             return;
