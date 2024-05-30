@@ -1,73 +1,192 @@
 [
-    {
-        "id": 1,
-      "title": "Portátil",
-      "description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
-      "code": "LP1001",
-      "price": 999.99,
-      "status": "disponible",
-      "stock": 25,
-      "category": "Electrónica",
-      "thumbnails": [
-        "https://example.com/images/portatil1.jpg",
-        "https://example.com/images/portatil2.jpg"
-      ]
-    },
-    {
-        "id": 2,
-      "title": "Teléfono Inteligente",
-      "description": "Un elegante teléfono inteligente con una cámara potente y un procesador rápido.",
-      "code": "TI2002",
-      "price": 599.99,
-      "status": "disponible",
-      "stock": 50,
-      "category": "Electrónica",
-      "thumbnails": [
-        "https://example.com/images/telefono1.jpg",
-        "https://example.com/images/telefono2.jpg"
-      ]
-    },
-    {
-        "id": 3,
-      "title": "Auriculares Inalámbricos",
-      "description": "Auriculares con cancelación de ruido y larga duración de batería.",
-      "code": "AI3003",
-      "price": 199.99,
-      "status": "agotado",
-      "stock": 0,
-      "category": "Accesorios",
-      "thumbnails": [
-        "https://example.com/images/auriculares1.jpg",
-        "https://example.com/images/auriculares2.jpg"
-      ]
-    },
-    {
-        "id": 4,
-      "title": "Reloj Inteligente",
-      "description": "Un reloj inteligente con seguimiento de salud y funciones de notificación.",
-      "code": "RI4004",
-      "price": 149.99,
-      "status": "disponible",
-      "stock": 75,
-      "category": "Wearables",
-      "thumbnails": [
-        "https://example.com/images/reloj1.jpg",
-        "https://example.com/images/reloj2.jpg"
-      ]
-    },
-    {
-        "id": 5,
-      "title": "Altavoz Bluetooth",
-      "description": "Altavoz Bluetooth portátil con sonido de alta calidad.",
-      "code": "AB5005",
-      "price": 89.99,
-      "status": "disponible",
-      "stock": 100,
-      "category": "Audio",
-      "thumbnails": [
-        "https://example.com/images/altavoz1.jpg",
-        "https://example.com/images/altavoz2.jpg"
-      ]
-    }
-  ]
-  
+	{
+		"id": 1,
+		"title": "Portátil",
+		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
+		"code": "LP1001",
+		"price": 999.99,
+		"status": "disponible",
+		"stock": 25,
+		"category": "Electrónica",
+		"thumbnails": [
+			"https://example.com/images/portatil1.jpg",
+			"https://example.com/images/portatil2.jpg"
+		]
+	},
+	{
+		"id": 2,
+		"title": "Teléfono Inteligente",
+		"description": "Un elegante teléfono inteligente con una cámara potente y un procesador rápido.",
+		"code": "TI2002",
+		"price": 599.99,
+		"status": "disponible",
+		"stock": 50,
+		"category": "Electrónica",
+		"thumbnails": [
+			"https://example.com/images/telefono1.jpg",
+			"https://example.com/images/telefono2.jpg"
+		]
+	},
+	{
+		"id": 3,
+		"title": "Auriculares Inalámbricos",
+		"description": "Auriculares con cancelación de ruido y larga duración de batería.",
+		"code": "AI3003",
+		"price": 199.99,
+		"status": "agotado",
+		"stock": 0,
+		"category": "Accesorios",
+		"thumbnails": [
+			"https://example.com/images/auriculares1.jpg",
+			"https://example.com/images/auriculares2.jpg"
+		]
+	},
+	{
+		"id": 4,
+		"title": "Reloj Inteligente",
+		"description": "Un reloj inteligente con seguimiento de salud y funciones de notificación.",
+		"code": "RI4004",
+		"price": 149.99,
+		"status": "disponible",
+		"stock": 75,
+		"category": "Wearables",
+		"thumbnails": [
+			"https://example.com/images/reloj1.jpg",
+			"https://example.com/images/reloj2.jpg"
+		]
+	},
+	{
+		"id": 5,
+		"title": "Altavoz Bluetooth",
+		"description": "Altavoz Bluetooth portátil con sonido de alta calidad.",
+		"code": "AB5005",
+		"price": 89.99,
+		"status": "disponible",
+		"stock": 100,
+		"category": "Audio",
+		"thumbnails": [
+			"https://example.com/images/altavoz1.jpg",
+			"https://example.com/images/altavoz2.jpg"
+		]
+	},
+	{
+		"id": 6,
+		"title": "taza",
+		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
+		"code": "jkalhfgljkads",
+		"price": 999,
+		"stock": 25,
+		"category": "Electrónica",
+		"thumbnails": "image.jpg"
+	},
+	{
+		"id": 7,
+		"title": "taza",
+		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
+		"code": "jkalhdgddfggljkads",
+		"price": 999,
+		"stock": 25,
+		"category": "Electrónica",
+		"thumbnails": "image.jpg"
+	},
+	{
+		"id": 8,
+		"title": "taza",
+		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
+		"code": "jkalhdgdsssdfggljkads",
+		"price": 999,
+		"stock": 25,
+		"category": "Electrónica",
+		"thumbnails": "image.jpg"
+	},
+	{
+		"id": 9,
+		"title": "taza",
+		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
+		"code": "jkalhdgdssssdfggljkads",
+		"price": 999,
+		"stock": 25,
+		"category": "Electrónica",
+		"thumbnails": "image.jpg"
+	},
+	{
+		"id": 10,
+		"title": "taza",
+		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
+		"code": "jkalhsdgdssssdfggljkads",
+		"price": 999,
+		"stock": 25,
+		"category": "Electrónica",
+		"thumbnails": "image.jpg"
+	},
+	{
+		"id": 11,
+		"title": "taza",
+		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
+		"code": "jkalqgljkads",
+		"price": 999,
+		"stock": 25,
+		"category": "Electrónica",
+		"thumbnails": "image.jpg"
+	},
+	{
+		"id": 12,
+		"title": "taza",
+		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
+		"code": "jkalqglsjkads",
+		"price": 999,
+		"stock": 25,
+		"category": "Electrónica",
+		"thumbnails": "image.jpg"
+	},
+	{
+		"id": 13,
+		"title": "taza",
+		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
+		"code": "jkalqglsjkasds",
+		"price": 999,
+		"stock": 25,
+		"category": "Electrónica",
+		"thumbnails": "image.jpg"
+	},
+	{
+		"id": 14,
+		"title": "taza",
+		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
+		"code": "jka3kasds",
+		"price": 999,
+		"stock": 25,
+		"category": "Electrónica",
+		"thumbnails": "image.jpg"
+	},
+	{
+		"id": 15,
+		"title": "taza",
+		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
+		"code": "jka3ksasds",
+		"price": 999,
+		"stock": 25,
+		"category": "Electrónica",
+		"thumbnails": "image.jpg"
+	},
+	{
+		"id": 16,
+		"title": "taza",
+		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
+		"code": "jk2asds",
+		"price": 999,
+		"stock": 25,
+		"category": "Electrónica",
+		"thumbnails": "image.jpg"
+	},
+	{
+		"id": 17,
+		"title": "taza",
+		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
+		"code": "fdf",
+		"price": 999,
+		"stock": 25,
+		"category": "Electrónica",
+		"thumbnails": "image.jpg"
+	}
+]

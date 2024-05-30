@@ -1,9 +1,10 @@
+import { log } from "console";
 import fs from "fs";
 
 // Class Product
- class Product {
+class Product {
     constructor(title, description, price, thumbnails, category, status = true, code, stock) {
-            this.title = title,
+        this.title = title,
             this.description = description,
             this.code = code,
             this.price = price,
@@ -14,14 +15,14 @@ import fs from "fs";
     }
 }
 // Class ProductManager
- class ProductManager {
+class ProductManager {
     constructor(path) {
         this.path = path;
         // Validamos si existe el archivo
         if (fs.existsSync(this.path)) {
             try {
                 this.products = JSON.parse(fs.readFileSync(this.path, "utf-8"));
-                
+
             } catch (error) {
                 this.products = [];
 
@@ -33,17 +34,11 @@ import fs from "fs";
 
     // Add Product
     async addProduct(product) {
-        // Valida que todos los campos contengan datos
+
         if (
-            !product.title ||
-            !product.description ||
-            !product.price ||
-            !product.code ||
-            !product.stock ||
-            !product.category ||
-            !product.thumbnail
+            !product.title || !product.description || !product.code || !product.price || !product.stock || !product.category || !product.thumbnails
         ) {
-            console.log("Son obligatorios todos los campos");
+            console.log("Son obligatorios aaaa todos los campos");
             return;
         }
 
@@ -53,11 +48,10 @@ import fs from "fs";
             return;
         }
 
-        // Valida que el array no este vacio
         if (this.products.length > 0) {
             // Si no esta vacio, se suma 1 para el nuevo id
             const newId = this.products[this.products.length - 1].id + 1;
-            product.id = newId;
+            product = { id: newId, ...product };
         } else {
             // Si esta vacio empiezo con el id 1
             product.id = 1;
@@ -72,9 +66,13 @@ import fs from "fs";
             );
 
             console.log("El producto fue creado correctamente");
+            
+
         } catch (error) {
             console.log(error);
         }
+        console.log(product);
+        return product;
     }
 
     getProducts() {
@@ -83,7 +81,7 @@ import fs from "fs";
     }
 
     getProductById(idProduct) {
-        
+
         if (isNaN(Number(idProduct))) {
             console.log("El id debe ser un número");
             return;
