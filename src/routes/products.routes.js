@@ -2,7 +2,8 @@
 import { Router } from "express";
 import Product from "../manager/productManager.js";
 import ProductManager from "../manager/productManager.js";
-
+import fs from 'fs'
+import path from "path";
 
 
 const manager = new ProductManager("./data/products.json");
@@ -16,7 +17,9 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", (req, res) => {
+    
     const { title, description, code, price, status = true, stock, category, thumbnails } = req.body;
+    console.log(title)
     const newId = products.length + 1;
 
     if (!title || !description || !code || !price || !stock || !category || !thumbnails) {
@@ -25,13 +28,14 @@ router.post("/", (req, res) => {
         });
     }
 
-
-    let product = new Product(newId, title, description, code, price, status, stock, category, thumbnails);
+    let product = new Product(res.body);
 
     manager.addProduct(product);
-
-
+    console.log(product)
+    console.log(products);
     res.status(201).json(product);
+
 });
+
 
 export default router;

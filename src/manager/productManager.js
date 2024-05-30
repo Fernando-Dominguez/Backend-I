@@ -1,6 +1,4 @@
 import fs from "fs";
-import path from "path";
-
 
 // Class Product
  class Product {
@@ -32,8 +30,7 @@ import path from "path";
         }
     }
 
-
-
+    // Add Product
     async addProduct(product) {
         // Valida que todos los campos contengan datos
         if (
@@ -161,36 +158,4 @@ import path from "path";
     }
 }
 
-// module.exports = new ProductManager("./data/products.json");
-// export default new ProductManager("./data/products.json");
 export default ProductManager;
-// Pruebas
-// const manager = new ProductManager("./data/products.json");
-
-// Add Product ✅
-// manager.addProduct(
-//   new Product("Product 1", "Description 1", 100, "image 1", "0001A", 10)
-// );
-// manager.addProduct(
-//   new Product("Product 2", "Description 2", 200, "image 2", "0002B", 20)
-// );
-// manager.addProduct(
-//   new Product("Product 3", "Description 3", 300, "image 3", "0003C", 30)
-// );
-// manager.addProduct(
-//   new Product("Product 4", "Description 4", 400, "image 4", "0004D", 40)
-// );
-
-// Get Products ✅
-// console.log(manager.getProducts());
-
-// Get Product By Id ✅
-// console.log(manager.getProductById(50));
-
-// Delete Product ✅
-// manager.deleteProduct(3);
-
-// Update Product ✅
-// manager.updateProduct(1, {
-//   title: "Product 1 Updated",
-// });

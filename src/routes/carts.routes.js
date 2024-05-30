@@ -13,7 +13,7 @@ router.post("/", (req, res) => {
 
     if(!id || !quantity) {
         return res.status(400).json({
-            error: "name and age are required"
+            error: "Todos los datos son required"
         });
     }
 
