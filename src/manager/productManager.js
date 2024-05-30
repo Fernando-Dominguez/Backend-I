@@ -1,4 +1,5 @@
 import { log } from "console";
+import { KeyObject } from "crypto";
 import fs from "fs";
 
 // Class Product
@@ -66,7 +67,7 @@ class ProductManager {
             );
 
             console.log("El producto fue creado correctamente");
-            
+
 
         } catch (error) {
             console.log(error);
@@ -131,19 +132,27 @@ class ProductManager {
             (product) => product.id === idProduct
         );
 
-        const productOld = this.products[productIndex];
-
         if (productIndex === -1) {
             console.log("No se encontro el producto");
             return;
         }
+        const productOld = this.products[productIndex];
 
         // Actualizamos el producto
-        // Si algun campo coincide con productOld, lo sobreescribimos
-        this.products[productIndex] = {
-            ...productOld,
-            ...product,
+
+        const productUpgraded = {
+            id: productOld.id,
+            title: product.title ? product.title : productOld.title,
+            description: product.description ? product.description : productOld.description,
+            price: product.price ? product.price : productOld.price,
+            thumbnails: product.thumbnails ? product.thumbnails : productOld.thumbnails,
+            code: productOld.code,
+            stock: product.stock ? product.stock : productOld.stock,
+            category: product.category ? product.category : productOld.category,
+            status: product.status ?? productOld.status,
         };
+
+        this.products[productIndex] = productUpgraded;
 
         try {
             fs.promises.writeFile(

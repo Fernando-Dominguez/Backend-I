@@ -15,13 +15,7 @@
 	},
 	{
 		"id": 2,
-		"title": "Teléfono Inteligente",
-		"description": "Un elegante teléfono inteligente con una cámara potente y un procesador rápido.",
-		"code": "TI2002",
-		"price": 599.99,
-		"status": "disponible",
-		"stock": 50,
-		"category": "Electrónica",
+		"title": "modificado",
 		"thumbnails": [
 			"https://example.com/images/telefono1.jpg",
 			"https://example.com/images/telefono2.jpg"
@@ -29,13 +23,7 @@
 	},
 	{
 		"id": 3,
-		"title": "Auriculares Inalámbricos",
-		"description": "Auriculares con cancelación de ruido y larga duración de batería.",
-		"code": "AI3003",
-		"price": 199.99,
-		"status": "agotado",
-		"stock": 0,
-		"category": "Accesorios",
+		"title": "modificado",
 		"thumbnails": [
 			"https://example.com/images/auriculares1.jpg",
 			"https://example.com/images/auriculares2.jpg"
@@ -43,17 +31,16 @@
 	},
 	{
 		"id": 4,
-		"title": "Reloj Inteligente",
-		"description": "Un reloj inteligente con seguimiento de salud y funciones de notificación.",
-		"code": "RI4004",
-		"price": 149.99,
-		"status": "disponible",
-		"stock": 75,
-		"category": "Wearables",
+		"title": "Teléfono Inteligente",
+		"description": "Un elegante teléfono inteligente con una cámara potente y un procesador rápido.",
+		"category": "Electrónica",
 		"thumbnails": [
 			"https://example.com/images/reloj1.jpg",
 			"https://example.com/images/reloj2.jpg"
-		]
+		],
+		"price": 599.99,
+		"code": "ww",
+		"stock": 50
 	},
 	{
 		"id": 5,
@@ -71,73 +58,80 @@
 	},
 	{
 		"id": 6,
-		"title": "taza",
-		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
-		"code": "jkalhfgljkads",
-		"price": 999,
-		"stock": 25,
-		"category": "Electrónica",
-		"thumbnails": "image.jpg"
+		"title": "modificado",
+		"description": false,
+		"price": false,
+		"code": false,
+		"stock": false
 	},
 	{
-		"id": 7,
-		"title": "taza",
-		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
-		"code": "jkalhdgddfggljkads",
-		"price": 999,
-		"stock": 25,
-		"category": "Electrónica",
-		"thumbnails": "image.jpg"
+		"productOld": {
+			"title": "Reloj Inteligente",
+			"description": "Un reloj inteligente con seguimiento de salud y funciones de notificación.",
+			"price": 149.99,
+			"code": "RIs004",
+			"stock": 75,
+			"status": "disponible",
+			"category": "Wearables",
+			"id": 7,
+			"thumbnails": "image.jpg"
+		},
+		"title": "Reloj Inteligente",
+		"description": "Un reloj inteligente con seguimiento de salud y funciones de notificación.",
+		"code": "RIs004",
+		"stock": 75,
+		"status": "kjklj",
+		"category": "dfasdfsaf"
 	},
 	{
-		"id": 8,
-		"title": "taza",
-		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
-		"code": "jkalhdgdsssdfggljkads",
-		"price": 999,
-		"stock": 25,
-		"category": "Electrónica",
-		"thumbnails": "image.jpg"
+		"productOld": {
+			"id": 8,
+			"title": "taza",
+			"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
+			"code": "jkalhdgdsssdfggljkads",
+			"price": 999,
+			"stock": 25,
+			"category": "Electrónica",
+			"thumbnails": "image.jpg"
+		},
+		"stock": 75,
+		"status": "kjklj",
+		"category": "dfasdfsaf"
 	},
 	{
 		"id": 9,
-		"title": "taza",
+		"title": "modificado",
 		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
-		"code": "jkalhdgdssssdfggljkads",
 		"price": 999,
-		"stock": 25,
-		"category": "Electrónica",
-		"thumbnails": "image.jpg"
+		"code": "jkalhfgljkads",
+		"stock": 25
 	},
 	{
 		"id": 10,
-		"title": "taza",
+		"title": "nuevo",
 		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
-		"code": "jkalhsdgdssssdfggljkads",
 		"price": 999,
-		"stock": 25,
-		"category": "Electrónica",
-		"thumbnails": "image.jpg"
+		"thumbnail": "",
+		"code": "jkalhfgljkads",
+		"stock": 25
 	},
 	{
 		"id": 11,
-		"title": "taza",
+		"title": "nuevo",
 		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
-		"code": "jkalqgljkads",
 		"price": 999,
-		"stock": 25,
-		"category": "Electrónica",
-		"thumbnails": "image.jpg"
+		"thumbnail": "",
+		"code": "jkalqgljkads",
+		"stock": 25
 	},
 	{
 		"id": 12,
-		"title": "taza",
+		"title": "nuevo",
 		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
-		"code": "jkalqglsjkads",
 		"price": 999,
-		"stock": 25,
-		"category": "Electrónica",
-		"thumbnails": "image.jpg"
+		"thumbnail": "",
+		"code": "jkalqglsjkads",
+		"stock": 25
 	},
 	{
 		"id": 13,
@@ -161,32 +155,27 @@
 	},
 	{
 		"id": 15,
-		"title": "taza",
+		"title": "FUNCIONA!!!!!",
 		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
-		"code": "jka3ksasds",
 		"price": 999,
+		"thumbnails": "image.jpg",
+		"code": "jka3ksasds",
 		"stock": 25,
-		"category": "Electrónica",
-		"thumbnails": "image.jpg"
+		"category": "Electrónica"
 	},
 	{
 		"id": 16,
-		"title": "taza",
+		"title": "FUNCIONA!!!!!",
 		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
-		"code": "jk2asds",
 		"price": 999,
-		"stock": 25,
-		"category": "Electrónica",
-		"thumbnails": "image.jpg"
+		"code": "jk2asds"
 	},
 	{
 		"id": 17,
-		"title": "taza",
+		"title": "masa",
 		"description": "Un portátil de alto rendimiento adecuado para todas tus necesidades informáticas.",
-		"code": "fdf",
 		"price": 999,
-		"stock": 25,
-		"category": "Electrónica",
-		"thumbnails": "image.jpg"
+		"code": "fdf",
+		"stock": "Electrónica"
 	}
 ]

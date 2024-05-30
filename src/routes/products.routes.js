@@ -40,4 +40,38 @@ router.post('/', (req, res) => {
 
 })
 
+router.put("/:id", (req, res) => {
+    const { id } = req.params;
+    const { title, description, price, thumbnail, code, stock, category, status } =
+        req.body;
+
+    const product = manager.getProductById(id);
+
+    if (!product) {
+        return res.status(404).json({
+            error: "No se encontro el producto",
+        });
+    }
+
+    manager.updateProduct(product.id, {
+        title,
+        description,
+        price,
+        thumbnail,
+        code,
+        stock,
+        status,
+        category
+    });
+
+    const newProduct = manager.getProductById(Number(id));
+
+    res.json(newProduct);
+
+    return res.status(400).json({
+        error: `No se pudo actualizar el producto: ${error.message}`,
+    });
+
+});
+
 export default router;
