@@ -1,8 +1,5 @@
-import { productManager } from "./productManager.js";
+
 import fs from "fs";
-
-const manager = new ProductManager("../data/products.json/");
-
 class Cart {
     constructor(id) {
         this.id = id;
@@ -67,13 +64,15 @@ class CartManager {
             throw new Error("El carrito no se encontro");
         }
 
-        const product = await productManager.getProductById(idProd);
+        const products = await fs.promises.readFile(this.path, "utf-8");
+        products = JSON.parse(products);
+        const product = await products.find((product) => product.id === Number(idProd));
 
         if (!product) {
             throw new Error("El producto no se encontro");
         }
 
-        const prodInCart = cart.products.find(
+        const prodInCart = await cart.products.find(
             (product) => product.idProduct === idProd
         );
 
