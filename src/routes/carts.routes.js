@@ -29,6 +29,13 @@ router.get("/:cid", async (req, res) => {
 });
 
 
-router.post("/:id/product/:productId", (req, res) => { });
-
+router.post("/:id/product/:idProduct", async (req, res) => {
+    const { id, idProduct } = req.params;
+    try {
+        await cartManager.addProdToCart(+id, +idProduct);
+        res.status(201).json({ message: "El producto se agregó al carrito" });
+    } catch (error) {
+        res.status(400).json({ error: "El producto no se pudo agregar al carrito" });
+    }
+});
 export default router;
