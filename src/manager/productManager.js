@@ -1,5 +1,3 @@
-import { log } from "console";
-import { KeyObject } from "crypto";
 import fs from "fs";
 
 // Class Product

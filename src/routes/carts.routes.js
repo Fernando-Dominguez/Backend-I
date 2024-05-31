@@ -1,33 +1,14 @@
 import { Router } from "express";
+import CartManager from "../manager/cartsManager.js";
+
+const cartManager = new CartManager("./src/data/carts.json");
 
 const router = Router();
 
-const carts = [];
+router.post("/", (req, res) => { });
 
-router.get("/", (req, res) => {
-    res.json(carts);
-});
+router.get("/:cid", (req, res) => { });
 
-router.post("/", (req, res) => {
-    const { id, quantity } = req.body;
-
-    if(!id || !quantity) {
-        return res.status(400).json({
-            error: "Todos los datos son required"
-        });
-    }
-
-    carts.push({
-        id,
-        quantity
-    });
-
-    res.status(201).json({
-        post:{
-            id,
-            quantity
-        }        
-    }); 
-});
+router.post("/:id/product/:productId", (req, res) => { });
 
 export default router;
