@@ -1,5 +1,11 @@
 
+import ProductManager from "../manager/productManager.js";
 import fs from "fs";
+
+const managerProduct = new ProductManager("./src/data/products.json");
+
+// console.log(managerProduct.getProductById(3));
+
 class Cart {
     constructor(id) {
         this.id = id;
@@ -63,10 +69,10 @@ class CartManager {
         if (!cart) {
             throw new Error("El carrito no se encontro");
         }
-
-        const products = await fs.promises.readFile(this.path, "utf-8");
-        products = JSON.parse(products);
-        const product = await products.find((product) => product.id === Number(idProd));
+        const product = await managerProduct.getProductById(idProd);
+        // const products = await fs.promises.readFile(this.path, "utf-8");
+        // products = JSON.parse(products);
+        // const product = await products.find((product) => product.id === Number(idProd));
 
         if (!product) {
             throw new Error("El producto no se encontro");
